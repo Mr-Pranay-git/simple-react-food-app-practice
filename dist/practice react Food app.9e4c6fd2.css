@@ -1,0 +1,20 @@
+.header {
+  border: 2px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-items ul {
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2vw;
+  list-style-type: none;
+  display: flex;
+}
+/*# sourceMappingURL=practice react Food app.9e4c6fd2.css.map */
