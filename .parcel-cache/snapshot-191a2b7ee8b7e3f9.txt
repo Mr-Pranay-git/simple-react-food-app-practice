@@ -16,12 +16,12 @@
 108D:\Namaste React\practice react Food app\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133981022584260340 0
 103D:\Namaste React\practice react Food app\node_modules\@parcel\runtime-js\src\helpers\node\css-loader.js133981022584761566 0
 114D:\Namaste React\practice react Food app\node_modules\@swc\helpers\cjs\_class_static_private_field_destructure.cjs133981022585740658 0
-45D:\Namaste React\practice react Food app\dist133982872964556850 1
-47D:\Namaste React\practice react Food app\App.js133982856269557437 0
+45D:\Namaste React\practice react Food app\dist133983637879215776 1
+47D:\Namaste React\practice react Food app\App.js133983637867410785 0
 106D:\Namaste React\practice react Food app\node_modules\@swc\helpers\_\_iterable_to_array_limit\package.json133981022588562213 0
 58D:\Namaste React\practice react Food app\node_modules\.bin133981022592542163 1
 74D:\Namaste React\practice react Food app\node_modules\postcss-value-parser133981022584535349 1
-50D:\Namaste React\practice react Food app\index.css133982872963925538 0
+50D:\Namaste React\practice react Food app\index.css133983633948146887 0
 68D:\Namaste React\practice react Food app\node_modules\tslib\tslib.js133981022584260340 0
 71D:\Namaste React\practice react Food app\node_modules\get-port\index.js133981022583740553 0
 88D:\Namaste React\practice react Food app\node_modules\@parcel\core\lib\Transformation.js133981022587742391 0
@@ -234,7 +234,7 @@
 94D:\Namaste React\practice react Food app\node_modules\@parcel\package-manager\lib\index.js.map133981022586055879 0
 99D:\Namaste React\practice react Food app\node_modules\@parcel\watcher\src\windows\WindowsBackend.hh133981022586028488 0
 101D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\input-placeholder.js133981022590090830 0
-56D:\Namaste React\practice react Food app\dist\index.html133982855859968317 0
+56D:\Namaste React\practice react Food app\dist\index.html133983637876824106 0
 103D:\Namaste React\practice react Food app\node_modules\@swc\helpers\cjs\_is_native_reflect_construct.cjs133981022586404279 0
 68D:\Namaste React\practice react Food app\node_modules\ordered-binary133981022584918004 1
 82D:\Namaste React\practice react Food app\node_modules\@parcel\packager-svg\LICENSE133981022583366126 0
@@ -944,7 +944,7 @@
 77D:\Namaste React\practice react Food app\node_modules\react-dom\server.bun.js133981032537621446 0
 87D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\svg.js133981022591509222 0
 93D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\gyroscope.js133981022589704533 0
-81D:\Namaste React\practice react Food app\dist\practice react Food app.cb65f72e.js133982872742570463 0
+81D:\Namaste React\practice react Food app\dist\practice react Food app.cb65f72e.js133983637877302918 0
 73D:\Namaste React\practice react Food app\node_modules\react-dom\server.js133981032537631444 0
 85D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\regions\VI.js133981022592010816 0
 81D:\Namaste React\practice react Food app\node_modules\react-dom\static.browser.js133981032537631444 0
@@ -1478,7 +1478,7 @@
 95D:\Namaste React\practice react Food app\node_modules\@parcel\core\src\requests\EntryRequest.js133981022586647268 0
 85D:\Namaste React\practice react Food app\node_modules\@parcel\utils\test\input\config133981022587056774 1
 85D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\regions\CN.js133981022587056774 0
-86D:\Namaste React\practice react Food app\dist\practice react Food app.9e4c6fd2.css.map133982872964536756 0
+86D:\Namaste React\practice react Food app\dist\practice react Food app.9e4c6fd2.css.map133983637879202448 0
 85D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\regions\CO.js133981022587056774 0
 105D:\Namaste React\practice react Food app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.1133981022585648979 0
 78D:\Namaste React\practice react Food app\node_modules\@parcel\transformer-node133981022583866178 1
@@ -2045,7 +2045,7 @@
 101D:\Namaste React\practice react Food app\node_modules\@parcel\transformer-html\src\HTMLTransformer.js133981022583862678 0
 97D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\console-basic.js133981022587193346 0
 96D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\console-time.js133981022587203494 0
-85D:\Namaste React\practice react Food app\dist\practice react Food app.cb65f72e.js.map133982872742643284 0
+85D:\Namaste React\practice react Food app\dist\practice react Food app.cb65f72e.js.map133983637877393005 0
 107D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\date-tolocaledatestring.js133981022588744954 0
 105D:\Namaste React\practice react Food app\node_modules\caniuse-lite\data\features\constraint-validation.js133981022587223431 0
 89D:\Namaste React\practice react Food app\node_modules\@parcel\transformer-babel\README.md133981022585372455 0
@@ -3596,4 +3596,4 @@
 69D:\Namaste React\practice react Food app\node_modules\.bin\parcel.ps1133981022592542163 0
 65D:\Namaste React\practice react Food app\node_modules\.bin\semver133981022592542163 0
 85D:\Namaste React\practice react Food app\node_modules\.bin\update-browserslist-db.ps1133981022592542163 0
-82D:\Namaste React\practice react Food app\dist\practice react Food app.9e4c6fd2.css133982872964536756 0
+82D:\Namaste React\practice react Food app\dist\practice react Food app.9e4c6fd2.css133983637879168411 0
