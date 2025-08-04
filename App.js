@@ -38,12 +38,12 @@ const Header = () => {
     )
 }
 
-const RestaurantCard = ()=>{
+const RestaurantCard = (prop)=>{
     return(
         <div className="res-cards">
-            <img className="res-logo" src="https://www.logodesign.net/logo-new/cartoon-food-truck-with-burger-on-top-9182ld.png?nwm=1&nws=1&industry=food&txt_keyword=All" />
-            <h3>Pizza Hut</h3>
-            <h2>Paneer Pizza </h2>
+            <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/c53517b8-dcb2-4a61-bfa7-9d667beded9f_188503.JPG" />
+            <h3>{prop.resName} </h3>
+            <h2>{prop.cusine} </h2>
             <h2>rating 4.4</h2>
             <h2>38 minutes</h2>
 
@@ -51,11 +51,20 @@ const RestaurantCard = ()=>{
     )
 }
 
+const resObj =()=> {}
+
 const Body =()=>{
     return <div className="body" style={{fontFamily:"Arial"}}>
         <div className="search-bar">Search</div>
         <div className="res-container">
-            <RestaurantCard/>
+            <RestaurantCard 
+                resName="Pizza Hut"
+                cusine="pizza, french fries, pepsi"
+             />
+            <RestaurantCard 
+                resName="Burger King"
+                cusine="burgers, fries, coke"
+            />
         </div>
     </div>
 }
