@@ -2011,7 +2011,14 @@ const Body =()=>{
         <div className="search-bar">Search</div>
         <div className="res-container">
             <RestaurantCard resData={reslist[0]}/>
-            {/* <RestaurantCard resData={reslist}/> */}
+            <RestaurantCard resData={reslist[1]}/>
+            <RestaurantCard resData={reslist[2]}/>
+            <RestaurantCard resData={reslist[3]}/>
+            <RestaurantCard resData={reslist[4]}/>
+            <RestaurantCard resData={reslist[5]}/>
+            <RestaurantCard resData={reslist[6]}/>
+            <RestaurantCard resData={reslist[7]}/>
+            <RestaurantCard resData={reslist[8]}/>
         </div>
     </div>
 }

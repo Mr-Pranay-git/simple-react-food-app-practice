@@ -15,15 +15,21 @@
     list-style-type: none; 
     font-size: 1.2vw;
 }
+.res-container{
+    display: flex;
+    gap: 1vw;
+        
+}
 .res-cards{
-    width: 14vw;
-    height: 32vh;
+    min-width:14vw;
+    min-height: 32vh;
     background-color: gainsboro;
     border-radius: 5%;
+    padding: 5px;
 }
 
 .res-cards:hover{
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 .res-cards h3{
