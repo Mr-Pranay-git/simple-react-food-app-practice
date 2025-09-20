@@ -15,7 +15,7 @@ const Body = () => {
         );
         const json = await data.json();
         console.log(json);
-        
+        // SetRestaurantlist(json?.data?.cards[2]?.card?.card);
     };
     
     return <div className="body" style={{ fontFamily: "Arial" }}>
