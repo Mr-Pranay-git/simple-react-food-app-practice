@@ -65,3 +65,14 @@ html,body{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.shimmer-container{
+display: flex;
+}
+
+.shimmer-card{
+   height: 50vh;
+   width: 30vw;
+   background-color: #f0f0f0;
+   margin: 10px;
+}
