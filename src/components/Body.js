@@ -18,17 +18,12 @@ const Body = () => {
         console.log(json);
         // SetRestaurantlist(json?.data?.cards[2]?.card?.card);
         console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-        SetRestaurantlist(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        SetRestaurantlist(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         
     };
-
-    if(restaurantlist.length === 0){
-        return <Shimmer></Shimmer>
-            
-    }
     
     
-    return <div className="body" style={{ fontFamily: "Arial" }}>
+    return restaurantlist.length=== 0 ?<Shimmer/> : <div className="body" style={{ fontFamily: "Arial" }}>
         
         <button className="filter-btn" 
         onClick={()=>{
