@@ -1,7 +1,8 @@
-import React from "react";
+import React, { use } from "react";
+import { useState } from "react";
  const Header = () => {
-    const btnName = 'Login';
-     
+    let btnName = 'Login';
+     const [LoginBtn ,  setLoginBtn] = useState('login')
     return(
         <div className="header">
             <div className="logo">
@@ -14,7 +15,11 @@ import React from "react";
                     <li>About Us</li>
                     <li>Contact Us</li>
                     <li>Cart</li>
-                    <button className="login" onClick={()=>{}}>{btnName}</button>
+                    <button className="login" onClick={()=>{
+                        setLoginBtn('Logout')
+                    }}>
+                        {LoginBtn}
+                    </button>
                 </ul>
             </div>
         </div>
