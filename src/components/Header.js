@@ -16,7 +16,7 @@ import { useState } from "react";
                     <li>Contact Us</li>
                     <li>Cart</li>
                     <button className="login" onClick={()=>{
-                        setLoginBtn('Logout')
+                        LoginBtn == 'Login' ? setLoginBtn('Logout') : setLoginBtn('Login');
                     }}>
                         {LoginBtn}
                     </button>

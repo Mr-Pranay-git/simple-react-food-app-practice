@@ -12,6 +12,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin: 10px;
     border: 2px solid black;
 }
 .logo img{
@@ -31,11 +32,12 @@ html,body{
 .res-container{
     display: flex;
     gap: 1vw;
+    flex-wrap: nowrap;
         
-}
+}   
 .res-cards{
-    min-width:14vw;
-    min-height: 32vh;
+    width:210px;
+    min-height: 300px;
     background-color: gainsboro;
     border-radius: 5%;
     padding: 5px;
@@ -78,4 +80,11 @@ display: flex;
 }
 .login{
     padding: 10px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
 }
