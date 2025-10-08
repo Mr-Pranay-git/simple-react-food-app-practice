@@ -5,7 +5,7 @@ import Shimmer from "./Shimmer";
 const Body = () => {
     const [restaurantlist, SetRestaurantlist] = useState([]);
     const [searchText, setSearchText] = useState("")
-    const [filteredRestaurant , setFilteredRestaurant] = useState([])
+    const [filteredRestaurant, setFilteredRestaurant] = useState([])
     
     
     useEffect(() => {
@@ -19,14 +19,14 @@ const Body = () => {
         );
         const json = await data.json();
         console.log(json);
-        // SetRestaurantlist(json?.data?.cards[2]?.card?.card);
+        // SetRestaurantlist(json?.data?.c  ards[2]?.card?.card);
         // console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
         SetRestaurantlist(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
 
 
-    return restaurantlist.length === 0 ? <Shimmer /> : (
+    return restaurantlist.length === 0 ? <Shimmer/> : (
         <div className="body" style={{ fontFamily: "Arial" }}>
 
             <div className="filter">
@@ -47,7 +47,7 @@ const Body = () => {
                             const filtered = restaurantlist
                             .filter((res)=> res.info.name.toLowerCase().includes(searchText.toLowerCase())
                             )
-                            SetRestaurantlist(filtered)
+                            setFilteredRestaurant(filtered)
                         }}>Search</button>
                 </div>
                 <button className="filter-btn"
