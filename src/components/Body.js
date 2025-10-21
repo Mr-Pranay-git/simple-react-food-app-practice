@@ -19,8 +19,6 @@ const Body = () => {
         );
         const json = await data.json();
         console.log(json);
-        // SetRestaurantlist(json?.data?.cards[2]?.card?.card);
-        // console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
         SetRestaurantlist(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
