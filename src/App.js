@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import RestaurantCard from "./components/RestaurantCard";
 import { createBrowserRouter } from "react-router-dom";
+import { HydratedRouter, RouterProvider } from "react-router-dom";
+import About from "./components/About";
 
 
 
@@ -24,8 +26,7 @@ const aapRouter = ([
         element: <About/>
     },
     {
-        path:"/contact",
-        element: <Contact/>
+        path: "/contac"
     }
 ])
 
