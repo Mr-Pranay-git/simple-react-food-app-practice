@@ -2,11 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import RestaurantCard from "./components/RestaurantCard";
-import { createBrowserRouter } from "react-router-dom";
-import { HydratedRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
-
+import Contact from "./components/Contact.js"
 
 
 const AppLayout =()=>{
@@ -16,7 +14,7 @@ const AppLayout =()=>{
     </div>
 }
 
-const aapRouter = ([
+const aapRouter = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout/>
@@ -26,10 +24,12 @@ const aapRouter = ([
         element: <About/>
     },
     {
-        path: "/contac"
+        path: "/contact",
+        element: <Contact/>
     }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<AppLayout/>)
+// root.render(<AppLayout/>)
+root.render(<RouterProvider router={aapRouter} />)
 
