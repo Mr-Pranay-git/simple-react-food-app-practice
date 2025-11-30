@@ -8,32 +8,37 @@ import Contact from "./components/Contact.js";
 import Error from "./components/Error.js"
 
 
-const AppLayout =()=>{
-    return <div className="app">
-        <Header/>
+const AppLayout = () => {
+    return (<div className="app">
+
+        <Header />
         {/* if path = / */}
-        <Body/> 
+        <Body />
         {/* if path = /about */}
-        <About/>
+        <About />
         {/* if path = /contact */}
-        <Contact/>
+        <Contact />
     </div>
+    )
 }
 
 const aapRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppLayout/>,
-        errorElement:<Error/>
+        element: <AppLayout />,
+        children: [
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "/contact",
+                element: <Contact />
+            }
+        ],
+        errorElement: <Error />
     },
-    {
-        path: "/about",
-        element: <About/>,
-    },
-    {
-        path: "/contact",
-        element: <Contact/>
-    }
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
