@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { BrowserRouter, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact.js";
 import Error from "./components/Error.js"
@@ -10,9 +10,9 @@ import Error from "./components/Error.js"
 
 const AppLayout = () => {
     return (<div className="app">
-        
+
         <Header />
-        <Outlet/> 
+        <Outlet />
     </div>
     )
 }
@@ -21,10 +21,10 @@ const aapRouter = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout />,
-        children: [     
+        children: [
             {
-                path:'/',
-                element:<Body />
+                path:"/",
+                element:<Body/>
             },
             {
                 path: "/about",
@@ -35,7 +35,7 @@ const aapRouter = createBrowserRouter([
                 element: <Contact />
             }
         ],
-        errorElement: <Error />
+        errorElement: <Error />,
     },
 
 ])
