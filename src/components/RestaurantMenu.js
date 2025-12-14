@@ -29,11 +29,11 @@ const RestaurantMenu = ()=>{
     
     // console.log(res_menuData);
 
-    
+    const {name} = res_menuData?.data?.cards[0]?.card?.card?.info  ;  
     
     return resInfo === null ? <Shimmer/> : (
         <div className="menu">
-            <h1>Name of Restaurant</h1>
+            <h1>{name}</h1>
             <h2>Menu</h2>
             <ul>
                 <li>Biryani</li>
