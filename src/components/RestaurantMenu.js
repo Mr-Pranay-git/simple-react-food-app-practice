@@ -21,19 +21,25 @@ const RestaurantMenu = ()=>{
          const data = await fetch(
             "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1463&lng=79.0849&restaurantId=869251&catalog_qa=undefined&submitAction=ENTER"
          )
-         const json = await data.json()
+         const json = await data.json() 
         //  console.log(json);
-    }
+    } 
     
     // ----------------------------------------------------------
     
-    // console.log(res_menuData);
+// if statement should be decleared before console log resinfo[0], as it is null initially console.log(resInfo[0]); cant run before if  statement     
+    if(resInfo === null) return <Shimmer/>;
 
-    const {name} = res_menuData?.data?.cards[0]?.card?.card?.info  ;  
+    console.log(resInfo[0]);
+    console.log(resInfo[0]?.data?.cards[2]?.card?.card?.info);
     
-    return resInfo === null ? <Shimmer/> : (
+    const {name, id, cloudinaryImageId, costForTwoMessage,cuisines} = resInfo[0]?.data?.cards[2]?.card?.card?.info  ;  
+    
+    
+    return (
         <div className="menu">
             <h1>{name}</h1>
+            <h3>{cuisines.join(", ")}</h3>
             <h2>Menu</h2>
             <ul>
                 <li>Biryani</li>
