@@ -27,7 +27,7 @@ const RestaurantMenu = ()=>{
     
     // ----------------------------------------------------------
     
-// if statement should be decleared before console log resinfo[0], as it is null initially console.log(resInfo[0]); cant run before if  statement     
+  
     if(resInfo === null) return <Shimmer/>;
 
     console.log(resInfo[0]);
@@ -39,7 +39,9 @@ const RestaurantMenu = ()=>{
     return (
         <div className="menu">
             <h1>{name}</h1>
-            <h3>{cuisines.join(", ")}</h3>
+            <p>
+                {cuisines.join(", ")} - {costForTwoMessage}
+            </p>
             <h2>Menu</h2>
             <ul>
                 <li>Biryani</li>
