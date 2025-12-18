@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import {useEffect}  from "react";
 import res_menuData from "../utils/mockMenuData";
 import Shimmer from "./Shimmer";
+import { useParams } from "react-router";
 
 const RestaurantMenu = ()=>{
     const [resInfo, setResinfo] = useState(null)
+    const {resId} = useParams();
+    
 
     useEffect(()=>{
         // fetchMenu()
@@ -16,10 +19,10 @@ const RestaurantMenu = ()=>{
     
     // --------------cant able to fetch api ----------------------------------
     const fetchMenu = async ()=>{
-        console.log("function called menu wala");
+        // console.log("function called menu wala");
         
          const data = await fetch(
-            "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1463&lng=79.0849&restaurantId=869251&catalog_qa=undefined&submitAction=ENTER"
+            `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1463&lng=79.0849&restaurantId=869251${resId}`
          )
          const json = await data.json() 
         //  console.log(json);

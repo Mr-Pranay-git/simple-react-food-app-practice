@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
      const [LoginBtn ,  setLoginBtn] = useState('login')
 
 
-    console.log("header render"); 
+    // console.log("header render"); 
     
      useEffect(()=>{
-        console.log('useEffect called')        
+        // console.log('useEffect called')        
      },[LoginBtn]);
 
      
