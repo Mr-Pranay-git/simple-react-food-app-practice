@@ -10,10 +10,11 @@ const RestaurantMenu = ()=>{
     
 
     useEffect(()=>{
-        // fetchMenu()
+        fetchMenu()
         setTimeout(()=>{
-        setResinfo(res_menuData)
-        console.log(res_menuData)
+        // setResinfo(res_menuData)
+        // console.log(res_menuData)
+
     }, 2000 )
     },[])
     
@@ -25,7 +26,7 @@ const RestaurantMenu = ()=>{
             `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1463&lng=79.0849&restaurantId=869251${resId}`
          )
          const json = await data.json() 
-        //  console.log(json);
+         console.log(json);
     } 
     
     // ----------------------------------------------------------

@@ -20,7 +20,7 @@ const Body = () => {
             
         );
         const json = await data.json();
-        // console.log(json                 );
+        // console.log(json);
         SetRestaurantlist(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
@@ -61,8 +61,9 @@ const Body = () => {
             </div>
             <div className="res-container">
                 {
-                    filteredRestaurant.map((restaurant) => (<RestaurantCard key={restaurant?.info?.id} resData={restaurant} />))
-                }
+                    filteredRestaurant.map((restaurant) => (
+                    <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
+                ))}
             </div>
         </div>
     );
