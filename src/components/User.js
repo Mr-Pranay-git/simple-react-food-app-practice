@@ -1,7 +1,5 @@
 import React from 'react'
-
-const User = (name) => {
-  
+const User = ({name}) => {
   return (
     <div className='user-card'>
             <h2>Name:{name} </h2>
@@ -10,5 +8,4 @@ const User = (name) => {
         </div>
   )
 }
-
 export default User;
