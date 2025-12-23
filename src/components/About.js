@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div>
       <h1>about us </h1>
-      <User />
-      <UserClass  />
+      <User name='this component is (functional) '/>
+      <UserClass name = {"this component is (Class)"} />
     </div>
   )
 }
