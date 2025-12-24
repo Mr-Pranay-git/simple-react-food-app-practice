@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <h1>about us </h1>
       <User name='this component is (functional) '/>
-      <UserClass name = {"this component is (Class)"} />
+      <UserClass name = {"this component is (Class)"} Location={"pune"}  />
     </div>
   )
 }
