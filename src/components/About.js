@@ -1,4 +1,3 @@
-import React from 'react'
 import UserClass from './UserClass'
 import User from './User'
 
@@ -12,4 +11,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
