@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 const User = ({name}) => {
+  const [count] = useState()
   return (
     <div className='user-card'>
+            <h1>Count:{count}</h1>
             <h2>Name:{name} </h2>
             <h3>Location: Deharadun</h3>
             <h4>Contact: @parmanu777</h4>
